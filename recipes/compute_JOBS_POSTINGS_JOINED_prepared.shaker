@@ -1,6 +1,108 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "JOB_ID"
+      },
+      {
+        "d": true,
+        "name": "TITLE"
+      },
+      {
+        "d": true,
+        "name": "LOCATION"
+      },
+      {
+        "d": true,
+        "name": "LOCATION_0"
+      },
+      {
+        "d": true,
+        "name": "COUNTRY"
+      },
+      {
+        "d": true,
+        "name": "LOCATION_1"
+      },
+      {
+        "d": true,
+        "name": "STATE"
+      },
+      {
+        "d": true,
+        "name": "LOCATION_2"
+      },
+      {
+        "d": true,
+        "name": "CITY"
+      },
+      {
+        "d": true,
+        "name": "DEPARTMENT"
+      },
+      {
+        "d": true,
+        "name": "SALARY_RANGE"
+      },
+      {
+        "d": true,
+        "name": "MEDIAN_WEEKLY_EARNINGS_USD"
+      },
+      {
+        "d": true,
+        "name": "COMPANY_PROFILE"
+      },
+      {
+        "d": true,
+        "name": "DESCRIPTION"
+      },
+      {
+        "d": true,
+        "name": "REQUIREMENTS"
+      },
+      {
+        "d": true,
+        "name": "BENEFITS"
+      },
+      {
+        "d": true,
+        "name": "TELECOMMUTING"
+      },
+      {
+        "d": true,
+        "name": "HAS_COMPANY_LOGO"
+      },
+      {
+        "d": true,
+        "name": "HAS_QUESTIONS"
+      },
+      {
+        "d": true,
+        "name": "EMPLOYMENT_TYPE"
+      },
+      {
+        "d": true,
+        "name": "REQUIRED_EXPERIENCE"
+      },
+      {
+        "d": true,
+        "name": "REQUIRED_EDUCATION"
+      },
+      {
+        "d": true,
+        "name": "INDUSTRY"
+      },
+      {
+        "d": true,
+        "name": "FUNCTION"
+      },
+      {
+        "d": true,
+        "name": "FRAUDULENT"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +132,57 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 3
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "LOCATION",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 3,
+        "separator": ",",
+        "outColPrefix": "LOCATION_",
+        "limitOutput": true,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "LOCATION_0",
+            "to": "COUNTRY"
+          },
+          {
+            "from": "LOCATION_1",
+            "to": "STATE"
+          },
+          {
+            "from": "LOCATION_2",
+            "to": "CITY"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -58,7 +209,33 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "LOCATION": 225,
+    "REQUIREMENTS": 300,
+    "JOB_ID": 100,
+    "REQUIRED_EDUCATION": 169,
+    "STATE": 100,
+    "HAS_QUESTIONS": 113,
+    "REQUIRED_EXPERIENCE": 158,
+    "COUNTRY": 100,
+    "DESCRIPTION": 300,
+    "COMPANY_PROFILE": 300,
+    "MEDIAN_WEEKLY_EARNINGS_USD": 210,
+    "BENEFITS": 300,
+    "EMPLOYMENT_TYPE": 128,
+    "INDUSTRY": 190,
+    "SALARY_RANGE": 105,
+    "FRAUDULENT": 100,
+    "DEPARTMENT": 183,
+    "HAS_COMPANY_LOGO": 135,
+    "FUNCTION": 120,
+    "CITY": 204,
+    "LOCATION_0": 100,
+    "LOCATION_1": 100,
+    "LOCATION_2": 204,
+    "TITLE": 300,
+    "TELECOMMUTING": 113
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
