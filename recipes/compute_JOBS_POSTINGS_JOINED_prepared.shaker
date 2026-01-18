@@ -223,7 +223,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -231,6 +231,66 @@
         "expression": "length(BENEFITS)",
         "column": "LENGTH_BENEFITS",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "COMPANY_PROFILE",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english_2021",
+        "clearStopWords": false,
+        "stem": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "DESCRIPTION",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english_2021",
+        "clearStopWords": false,
+        "stem": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "REQUIREMENTS",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english_2021",
+        "clearStopWords": false,
+        "stem": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "BENEFITS",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english_2021",
+        "clearStopWords": false,
+        "stem": false
       },
       "alwaysShowComment": false
     }
@@ -284,6 +344,7 @@
     "HAS_COMPANY_LOGO": 135,
     "FUNCTION": 120,
     "CITY": 204,
+    "COMPANY_PROFILE, DESCRIPTION": 225,
     "LOCATION_0": 100,
     "LOCATION_1": 100,
     "LOCATION_2": 204,
