@@ -3,37 +3,44 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 80
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
-  "centileOrders": [],
+  "centileOrders": [
+    {
+      "column": "JOB_ID",
+      "desc": false
+    }
+  ],
   "rangeSetTime": false,
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "CENTILE",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -92,6 +99,137 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "JOB_ID",
+                "type": "bigint"
+              },
+              {
+                "name": "TITLE",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "LOCATION",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "COUNTRY",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "STATE",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "CITY",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "DEPARTMENT",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "SALARY_RANGE",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "MEDIAN_WEEKLY_EARNINGS_USD",
+                "type": "double"
+              },
+              {
+                "name": "COMPANY_PROFILE",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "LENGTH_COMPANY_PROFILE",
+                "type": "bigint"
+              },
+              {
+                "name": "DESCRIPTION",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "LENGTH_DESCRIPTION",
+                "type": "bigint"
+              },
+              {
+                "name": "REQUIREMENTS",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "LENGTH_REQUIREMENTS",
+                "type": "bigint"
+              },
+              {
+                "name": "BENEFITS",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "LENGTH_BENEFITS",
+                "type": "bigint"
+              },
+              {
+                "name": "TELECOMMUTING",
+                "type": "bigint"
+              },
+              {
+                "name": "HAS_COMPANY_LOGO",
+                "type": "bigint"
+              },
+              {
+                "name": "HAS_QUESTIONS",
+                "type": "bigint"
+              },
+              {
+                "name": "EMPLOYMENT_TYPE",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "REQUIRED_EXPERIENCE",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "REQUIRED_EDUCATION",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "INDUSTRY",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "FUNCTION",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "FRAUDULENT",
+                "type": "bigint"
+              },
+              {
+                "name": "MIN_SALARY",
+                "type": "string",
+                "maxLength": 16777216
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
