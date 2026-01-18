@@ -16,9 +16,3 @@ output_dataset_df = input_dataset_df.withColumn('"MIN_SALARY"', split(col('"SALA
 # Write outputs
 output_dataset = dataiku.Dataset("Jobs_Python")
 dku_snowpark.write_with_schema(output_dataset, output_dataset_df)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-from snowflake.snowpark import Session
-
-session = dku_snowpark.get_session(connection_name="Snowflake_Connection")
-print(session.get_current_database())
