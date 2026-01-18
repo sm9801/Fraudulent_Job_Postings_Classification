@@ -16,23 +16,11 @@
       },
       {
         "d": true,
-        "name": "LOCATION_0"
-      },
-      {
-        "d": true,
         "name": "COUNTRY"
       },
       {
         "d": true,
-        "name": "LOCATION_1"
-      },
-      {
-        "d": true,
         "name": "STATE"
-      },
-      {
-        "d": true,
-        "name": "LOCATION_2"
       },
       {
         "d": true,
@@ -56,7 +44,15 @@
       },
       {
         "d": true,
+        "name": "LENGTH_COMPANY_PROFILE"
+      },
+      {
+        "d": true,
         "name": "DESCRIPTION"
+      },
+      {
+        "d": true,
+        "name": "LENGTH_DESCRIPTION"
       },
       {
         "d": true,
@@ -64,7 +60,15 @@
       },
       {
         "d": true,
+        "name": "LENGTH_REQUIREMENTS"
+      },
+      {
+        "d": true,
         "name": "BENEFITS"
+      },
+      {
+        "d": true,
+        "name": "LENGTH_BENEFITS"
       },
       {
         "d": true,
@@ -160,7 +164,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnRenamer",
@@ -179,6 +183,54 @@
             "to": "CITY"
           }
         ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "length(COMPANY_PROFILE)",
+        "column": "LENGTH_COMPANY_PROFILE",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "length(DESCRIPTION)",
+        "column": "LENGTH_DESCRIPTION",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "length(REQUIREMENTS)",
+        "column": "LENGTH_REQUIREMENTS",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "length(BENEFITS)",
+        "column": "LENGTH_BENEFITS",
+        "errorColumn": ""
       },
       "alwaysShowComment": false
     }
@@ -222,8 +274,10 @@
     "COMPANY_PROFILE": 300,
     "MEDIAN_WEEKLY_EARNINGS_USD": 210,
     "BENEFITS": 300,
+    "LENGTH_BENEFITS": 128,
     "EMPLOYMENT_TYPE": 128,
     "INDUSTRY": 190,
+    "LENGTH_REQUIREMENTS": 158,
     "SALARY_RANGE": 105,
     "FRAUDULENT": 100,
     "DEPARTMENT": 183,
@@ -234,6 +288,8 @@
     "LOCATION_1": 100,
     "LOCATION_2": 204,
     "TITLE": 300,
+    "LENGTH_COMPANY_PROFILE": 180,
+    "LENGTH_DESCRIPTION": 150,
     "TELECOMMUTING": 113
   },
   "sorting": [],
