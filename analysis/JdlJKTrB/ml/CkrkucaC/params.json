@@ -4336,7 +4336,8 @@
     "disabledCapabilities": []
   },
   "envSelection": {
-    "envMode": "USE_BUILTIN_MODE"
+    "envMode": "INHERIT",
+    "envName": "snowpark_env"
   },
   "containerSelection": {
     "containerMode": "INHERIT"
