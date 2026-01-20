@@ -4330,7 +4330,7 @@
   "maxConcurrentModelTraining": 2,
   "gpuConfig": {
     "params": {
-      "useGpu": false,
+      "useGpu": true,
       "gpuList": [
         0
       ],
