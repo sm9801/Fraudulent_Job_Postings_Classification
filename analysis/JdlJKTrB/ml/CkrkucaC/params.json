@@ -110,7 +110,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "REQUIREMENTS",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -124,14 +124,18 @@
       },
       "JOB_ID": {
         "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEDIAN",
         "impute_constant_value": 0.0,
         "keep_regular": false,
+        "rescaling": "AVGSTD",
         "monotonic": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -323,7 +327,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "DESCRIPTION",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -351,7 +355,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "COMPANY_PROFILE",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -403,7 +407,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "BENEFITS",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -768,7 +772,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "TITLE",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -1290,7 +1294,7 @@
         }
       },
       "allow_sparse_matrices": true,
-      "enabled": false
+      "enabled": true
     },
     "gbt_regression": {
       "n_estimators": {
@@ -1461,7 +1465,7 @@
           }
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "decision_tree_regression": {
       "max_depth": {
@@ -1676,7 +1680,7 @@
       "max_iter": 1000,
       "tol": 0.001,
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "knn": {
       "k": {
@@ -1699,7 +1703,7 @@
       "algorithm": "auto",
       "p": 2,
       "leaf_size": 30,
-      "enabled": false
+      "enabled": true
     },
     "logistic_regression": {
       "multi_class": "ovr",
@@ -1839,7 +1843,7 @@
       "coef0": 0.0,
       "tol": 0.001,
       "max_iter": -1,
-      "enabled": false
+      "enabled": true
     },
     "svm_regression": {
       "C": {
@@ -2257,7 +2261,7 @@
       "subsample_freq": 1,
       "use_bagging": false,
       "allow_sparse_matrices": true,
-      "enabled": false
+      "enabled": true
     },
     "xgboost": {
       "max_depth": {
@@ -2471,7 +2475,7 @@
       "early_stopping_rounds": 4,
       "tweedie_variance_power": 1.5,
       "allow_sparse_matrices": true,
-      "enabled": false
+      "enabled": true
     },
     "deep_neural_network_regression": {
       "learning_rate": {
@@ -4249,7 +4253,7 @@
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "streamAll": false,
-    "kfold": false,
+    "kfold": true,
     "nFolds": 5,
     "instanceIdRefresher": 0,
     "subSamplingSeed": 1337
