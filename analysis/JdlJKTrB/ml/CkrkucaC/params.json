@@ -110,7 +110,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "REQUIREMENTS",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -135,7 +135,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -327,7 +327,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "DESCRIPTION",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -407,7 +407,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "BENEFITS",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "TEXT",
         "state": {
           "userModified": false,
@@ -772,7 +772,7 @@
         "useCustomVectorizer": false,
         "isStructuredRef": false,
         "name": "TITLE",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "TEXT",
         "state": {
           "userModified": false,
