@@ -18,7 +18,7 @@ output_dataset = dataiku.Dataset("Jobs_Python")
 dku_snowpark.write_with_schema(output_dataset, output_dataset_df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# from snowflake.snowpark import Session
+from snowflake.snowpark import Session
 
-# session = dku_snowpark.get_session(connection_name="Snowflake_Connection")
-# print(session.get_current_database())
+session = dku_snowpark.get_session(connection_name="Snowflake_Connection")
+print(session.get_current_database())
