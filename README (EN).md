@@ -73,6 +73,7 @@ Due to computational constraints, models will initially be trained using an 80:2
 <img title="Train Evaluation" width="2000" height="2000" alt="image" src="https://github.com/sm9801/Fraudulent_Job_Postings_Classification/blob/master/Model%20Metrics/Train%20Summary.png" />
 
 As expected, all models achieve high accuracy scores. Therefore, we focus on recall, precision, and F1-score, as these metrics better capture performance on fraudulent job postings, which are the primary target of this project.
+Although the Decision Tree model scored the highest in terms of recall, the trade-offs in precision and F1-score were far too significant to select Decision Tree.
 Based on precision, we choose LightGBM, XGBoost, and SVM models for validation.
 
 - Test Validation
