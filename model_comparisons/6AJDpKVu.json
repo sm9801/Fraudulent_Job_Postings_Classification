@@ -1,11 +1,95 @@
 {
   "displayName": "Test Evaluations",
   "modelTaskType": "BINARY_CLASSIFICATION",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "ME-*-sPzJVWnR-RHutbMUt4v8B",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "ME-*-vvkcjJXi-QlMfNRmyPmog",
+      "isSelected": true,
+      "color": "#ff7f0e",
+      "isChampion": false
+    },
+    {
+      "smartId": "ME-*-iCTN5WsX-GGz7v0DqmpNj",
+      "isSelected": true,
+      "color": "#2ca02c",
+      "isChampion": false
+    },
+    {
+      "smartId": "S-*-f8UYOJ9d-initial",
+      "isSelected": false,
+      "color": "#d62728",
+      "isChampion": false
+    },
+    {
+      "smartId": "S-*-5titPOOC-initial",
+      "isSelected": false,
+      "color": "#9467bd",
+      "isChampion": false
+    }
+  ],
   "displayParams": {
-    "pinnedMetrics": [],
-    "yLabels": [],
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "ROC_AUC",
+      "CUMULATIVE_LIFT",
+      "AVERAGE_PRECISION",
+      "LOG_LOSS",
+      "CALIBRATION_LOSS",
+      "DATA_DRIFT",
+      "DATA_DRIFT_PVALUE",
+      "MIN_KS",
+      "MIN_CHISQUARE",
+      "MAX_PSI",
+      "PREDICTION_DRIFT_PSI",
+      "PREDICTION_DRIFT_CHISQUARE"
+    ],
+    "allAvailableMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "ROC_AUC",
+      "CUMULATIVE_LIFT",
+      "AVERAGE_PRECISION",
+      "LOG_LOSS",
+      "CALIBRATION_LOSS",
+      "DATA_DRIFT",
+      "DATA_DRIFT_PVALUE",
+      "MIN_KS",
+      "MIN_CHISQUARE",
+      "MAX_PSI",
+      "PREDICTION_DRIFT_PSI",
+      "PREDICTION_DRIFT_CHISQUARE"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
+    "pinnedMetrics": [
+      "ROC_AUC"
+    ],
+    "xLabel": "model:date",
+    "yLabels": [
+      "model:algorithm",
+      "evaluation:date",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
