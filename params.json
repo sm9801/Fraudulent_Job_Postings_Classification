@@ -10,6 +10,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "5titPOOC",
+          "objectType": "SAVED_MODEL"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
