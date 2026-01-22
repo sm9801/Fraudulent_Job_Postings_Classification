@@ -1,7 +1,12 @@
 {
   "name": "wef",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "0JZY9MJA",
+      "objectType": "MODEL_EVALUATION_STORE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
