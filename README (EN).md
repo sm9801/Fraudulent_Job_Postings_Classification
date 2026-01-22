@@ -1,4 +1,4 @@
-# Fraudulent Job Postings Classification
+# Fraudulent Job Postings Classification Pipeline
 
 This project evaluates several different models to effectively identify fraudulent job postings. Using Snowflake as a data streaming platform and warehousing services and Dataiku as an analysis platform, we evaluate multiple models to determine relevant features in fraudulent job posting identification.
 Furthermore, we aim to learn more about model parameters that leads to effective classifications.
