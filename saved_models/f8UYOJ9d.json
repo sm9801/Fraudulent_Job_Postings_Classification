@@ -4,7 +4,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "cleanTemporaryVersionsPostJob": false,
-  "name": "Predict FRAUDULENT (binary)",
+  "name": "Predict FRAUDULENT (LightGBM, binary)",
   "contentType": "prediction/py_memory",
   "activeVersion": "initial",
   "inlineVersions": [],
