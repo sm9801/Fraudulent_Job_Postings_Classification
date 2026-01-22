@@ -203,6 +203,7 @@
   },
   "name": "Fraudulent Job Postings Classification",
   "projectStatus": "Sandbox",
+  "imgPattern": 5,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -265,6 +266,7 @@
     },
     "lastModifiedOn": 1768407382962
   },
+  "description": "This data processing flow is designed to analyze job postings and predict the likelihood of them being fraudulent. It begins with a dataset containing various details about job postings, such as job titles, locations, company profiles, and other relevant attributes.\n\nThe flow first prepares the data by splitting the location information into separate columns for country, state, and city, which helps in better geographical analysis. It also calculates the length of text fields like company profile, job description, requirements, and benefits, which can be useful indicators of job posting quality or authenticity.\n\nText simplification is applied to these fields to normalize the data, making it easier to process and analyze. This step ensures that the text data is consistent and free from unnecessary variations, which can improve the accuracy of subsequent predictive models.\n\nThe core of the flow involves training a predictive model to identify potentially fraudulent job postings. This is achieved by using historical data to train the model, which is then evaluated and scored on test datasets. The output datasets, such as \"test_scored,\" \"test_scored_2,\" and \"test_scored_3,\" contain the original job posting information along with additional columns that provide the probability of a job posting being fraudulent and the model\u0027s prediction.\n\nThese outputs are crucial for businesses and job platforms as they help in identifying and mitigating the risk of fraudulent job postings. By providing a probability score and prediction, the flow enables decision-makers to take proactive measures to ensure the integrity and trustworthiness of job listings on their platforms. This not only protects job seekers from scams but also enhances the reputation of the job platform.\n\nDescription generated on 1/23/2026",
   "shortDesc": "The project *Fraudulent Job Postings Classification* was created by seokyukim98 on Jan 14th 2026",
   "tags": [],
   "customFields": {},
