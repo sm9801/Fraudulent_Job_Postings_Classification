@@ -1,0 +1,21 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "5titPOOC"
+  },
+  "owner": "seokyukim98@gmail.com",
+  "listed": false,
+  "name": "Model evaluation table",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "seokyukim98@gmail.com"
+    },
+    "lastModifiedOn": 1769100409601
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
