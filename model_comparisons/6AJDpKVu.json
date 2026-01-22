@@ -44,14 +44,7 @@
       "CUMULATIVE_LIFT",
       "AVERAGE_PRECISION",
       "LOG_LOSS",
-      "CALIBRATION_LOSS",
-      "DATA_DRIFT",
-      "DATA_DRIFT_PVALUE",
-      "MIN_KS",
-      "MIN_CHISQUARE",
-      "MAX_PSI",
-      "PREDICTION_DRIFT_PSI",
-      "PREDICTION_DRIFT_CHISQUARE"
+      "CALIBRATION_LOSS"
     ],
     "allAvailableMetrics": [
       "ACCURACY",
