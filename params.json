@@ -28,6 +28,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "vvkcjJXi",
+          "objectType": "MODEL_EVALUATION_STORE"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
