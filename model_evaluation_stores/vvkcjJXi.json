@@ -1,6 +1,6 @@
 {
   "rebuildBehavior": "EXPLICIT",
-  "name": "Evaluation LightGBM",
+  "name": "Evaluation results (LightGBM)",
   "metrics": {
     "probes": [],
     "engineConfig": {
