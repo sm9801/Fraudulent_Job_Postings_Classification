@@ -70,12 +70,14 @@
     },
     {
       "smartId": "ME-*-vvkcjJXi-QlMfNRmyPmog",
-      "isSelected": true,
+      "isSelected": false,
+      "color": "#6b6ecf",
       "isChampion": false
     },
     {
       "smartId": "ME-*-sPzJVWnR-RHutbMUt4v8B",
-      "isSelected": true,
+      "isSelected": false,
+      "color": "#637939",
       "isChampion": false
     }
   ],
