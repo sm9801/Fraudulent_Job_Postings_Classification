@@ -1,6 +1,6 @@
 {
   "rebuildBehavior": "EXPLICIT",
-  "name": "Evaluation results",
+  "name": "Evaluation results (SVM)",
   "metrics": {
     "probes": [],
     "engineConfig": {
