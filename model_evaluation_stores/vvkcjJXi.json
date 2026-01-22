@@ -154,12 +154,19 @@
     "predictionType": "BINARY_CLASSIFICATION",
     "pinnedMetrics": [],
     "xLabel": "evaluation:date",
-    "yLabels": [],
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
     "barLabels": [
       "evaluation:date",
+      "evaluation:model-name",
+      "evaluationDataset:dataset-name",
+      "model:algorithm",
       "model:name",
-      "evaluationDataset:dataset-name"
+      "testDataset:dataset-name",
+      "trainDataset:dataset-name"
     ],
     "graphStyle": "BAR",
     "sortColumn": "labels.evaluation:date",
