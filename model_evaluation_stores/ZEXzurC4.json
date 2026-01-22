@@ -73,10 +73,14 @@
     "dimensions": []
   },
   "displayParams": {
+    "displayedMetrics": [],
+    "allAvailableMetrics": [],
     "pinnedMetrics": [],
     "yLabels": [],
     "alsoDisplayedLabels": [],
-    "sortDescending": false,
+    "barLabels": [],
+    "sortColumn": "labels.evaluation:date",
+    "sortDescending": true,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
