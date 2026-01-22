@@ -36,7 +36,7 @@
     "main": {
       "items": [
         {
-          "ref": "test_scored",
+          "ref": "test_scored_1",
           "appendMode": false
         }
       ]
