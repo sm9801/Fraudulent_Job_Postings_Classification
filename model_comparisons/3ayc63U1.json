@@ -67,6 +67,11 @@
       "isSelected": false,
       "color": "#393b79",
       "isChampion": false
+    },
+    {
+      "smartId": "ME-*-vvkcjJXi-QlMfNRmyPmog",
+      "isSelected": true,
+      "isChampion": false
     }
   ],
   "displayParams": {
