@@ -4,7 +4,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "cleanTemporaryVersionsPostJob": false,
-  "name": "Predict FRAUDULENT (binary)",
+  "name": "CV XGBoost",
   "contentType": "prediction/py_memory",
   "activeVersion": "initial",
   "inlineVersions": [],
