@@ -1,0 +1,25 @@
+{
+  "displayName": "Test Evaluations",
+  "modelTaskType": "BINARY_CLASSIFICATION",
+  "comparedModels": [],
+  "displayParams": {
+    "pinnedMetrics": [],
+    "yLabels": [],
+    "alsoDisplayedLabels": [],
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "seokyukim98@gmail.com"
+    },
+    "lastModifiedOn": 1769110542294
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
