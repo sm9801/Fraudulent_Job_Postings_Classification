@@ -85,8 +85,9 @@
     "alsoDisplayedLabels": [],
     "barLabels": [
       "evaluation:date",
+      "evaluationDataset:dataset-name",
       "model:name",
-      "evaluationDataset:dataset-name"
+      "testDataset:dataset-name"
     ],
     "graphStyle": "BAR",
     "sortColumn": "",
