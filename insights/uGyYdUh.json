@@ -1,0 +1,22 @@
+{
+  "type": "model-evaluation_report",
+  "params": {
+    "mesSmartId": "vvkcjJXi"
+  },
+  "owner": "seokyukim98@gmail.com",
+  "listed": false,
+  "name": "Model evaluation table",
+  "dashboardCreationId": "yQg8ccW",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "seokyukim98@gmail.com"
+    },
+    "lastModifiedOn": 1769103436878
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
