@@ -1,5 +1,5 @@
 {
-  "displayName": "KNN",
+  "displayName": "Evaluation Comparison",
   "modelTaskType": "BINARY_CLASSIFICATION",
   "comparedModels": [
     {
